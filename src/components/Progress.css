@@ -1,0 +1,116 @@
+.Container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    width: 100vw;
+} 
+.Content{
+    align-items:inherit;
+    width: 400px;
+    margin-left: 100vh;
+}
+.Progressbar{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    transform: rotate(90deg);
+    margin-top: 50vh;
+    
+}
+.Progressbar::before{
+    content: "";
+    position: absolute;
+    background-color: #143851; 
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);
+    border-radius: 5px;
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s e;
+
+}
+
+.Progress{
+    position: absolute;
+    border-color:  #143851;
+    background-color: #E89941;
+    top: 50%;
+    left: 0;
+    transform:translateY(-50%);
+    border-radius: 5px;
+    height: 4px;
+    width: 50%;
+    z-index: -1;
+    transition: 0.4s e;
+
+}
+.Circulos{
+    background-color: #fff;
+    color:#36393F;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #143851;
+    transition: 0.4s ease;
+    transform: rotate(-90deg);
+}
+.Circulos.active{
+    border-color: #E89941;
+}
+.button{
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+}
+.Prev_Btn{
+    display:block;
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: #9F9F9F;
+    outline-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    border: ();
+    margin: 5px;
+    border-radius: 5px;
+}
+.Next_Btn{
+    display:block;
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: #9F9F9F;
+    outline-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    border: ();
+    margin: 5px;
+    border-radius: 5px;
+}
+.PrevBtn.active{
+    transform: scale(0.98);
+}
+.PrevBtn:focus{
+    outline: none;
+}
+.PrevBtn.disable{
+    background-color: #999;
+    cursor: not-allowed;
+}
+.Next_Btn.active{
+    transform: scale(0.98);
+}
+.Next_Btn:focus{
+    outline: none;
+}

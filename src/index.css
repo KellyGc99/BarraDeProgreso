@@ -6,7 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+body {
+  
+  background-image: url("./assets/6d956e7b5854a8ac9c5c8f9b5a2ae8ca.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
